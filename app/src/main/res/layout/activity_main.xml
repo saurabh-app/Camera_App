@@ -15,6 +15,12 @@
         android:textColor="@android:color/holo_green_dark"
         android:textSize="32sp"
         android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Captured Image" />
     <TextView
         android:textColor="@android:color/holo_purple"
         android:id="@+id/textView"
@@ -24,6 +30,17 @@
         android:text="Have a Wonderful day!"
         android:textSize="24sp"
         android:textStyle="bold" />
+<LinearLayout
+    android:layout_below="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Camera" />
     <Button
         android:layout_above="@id/buttonBlink"
         android:id="@+id/buttonZoom"
@@ -36,4 +53,5 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:text="Blink" />
+</LinearLayout>
 </RelativeLayout>
